@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/train.py", line 78, in <module>
+    for inputs, targets, mask in train_loader:
+  File "/home/mfaykus/.conda/envs/diss/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mfaykus/.conda/envs/diss/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfaykus/.conda/envs/diss/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfaykus/.conda/envs/diss/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/datasets.py", line 305, in __getitem__
+    image = Image.open(self.images[index]).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfaykus/.conda/envs/diss/lib/python3.11/site-packages/PIL/Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/zfs/fthpc/mfaykus/datasets/cityscapes2/compressed/1E-4/leftImg8bit/train/aachen_000106_000019_leftImg8bit.png'

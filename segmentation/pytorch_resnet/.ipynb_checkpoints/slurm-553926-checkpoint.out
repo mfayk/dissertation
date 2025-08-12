@@ -1,0 +1,6 @@
+34
+Traceback (most recent call last):
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/train.py", line 76, in <module>
+    model = model.to(device)
+            ^^^^^
+NameError: name 'model' is not defined

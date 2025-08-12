@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/train.py", line 122, in <module>
+    transforms.Resize((int(image_resizing_x[resize]), int(image_resizing_y[resize]))),  # Resize images to a consistent size
+                           ~~~~~~~~~~~~~~~~^^^^^^^^
+IndexError: list index out of range

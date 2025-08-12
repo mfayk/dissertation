@@ -1,0 +1,20 @@
+  File "/home/mfaykus/dissertation/compression/cp_data.py", line 7
+    while level < 101
+                     ^
+SyntaxError: expected ':'
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=256gb,walltime=48:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:09,mem=107908kb,walltime=00:00:17,ncpus=4,cpupercent=0,vmem=748908kb
+ 
+ 

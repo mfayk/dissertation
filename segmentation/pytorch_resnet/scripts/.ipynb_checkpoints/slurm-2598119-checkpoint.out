@@ -1,0 +1,8 @@
+/scratch/mfaykus/dissertation/datasets/cityscapes2/compressed/sz3_finetuned/05/
+Traceback (most recent call last):
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/train.py", line 151, in <module>
+    train_dataset = CityscapesDataset(root=path_name, split="train", augment=transform)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/datasets.py", line 226, in __init__
+    raise RuntimeError('Dataset not found or incomplete. Please make sure all required folders for the'
+RuntimeError: Dataset not found or incomplete. Please make sure all required folders for the specified "split" and "mode" are inside the "root" directory

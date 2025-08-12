@@ -1,0 +1,9 @@
+#PBS -N train_resnet
+#PBS -q viprgs -l select=1:ncpus=20:ngpus=2:mem=128gb:gpu_model=a100,walltime=24:00:00
+
+
+source activate diss
+
+cd dissertation/segmentation/pytorch_resnet/
+
+python train.py base

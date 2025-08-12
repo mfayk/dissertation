@@ -1,0 +1,15 @@
+/scratch/mfaykus/dissertation/datasets/cityscapes2/compressed/sz3_finetuned/08/
+10111
+LR
+0.0005
+error
+08
+model_num
+10111
+path
+/scratch/mfaykus/dissertation/NN_models/compressed/sz3_finetuned/resnet10111_cityscapes_08_size2_LR0.0005_run0.pth
+Traceback (most recent call last):
+  File "/home/mfaykus/dissertation/segmentation/pytorch_resnet/train.py", line 200, in <module>
+    model = model.to(device)
+            ^^^^^
+NameError: name 'model' is not defined
