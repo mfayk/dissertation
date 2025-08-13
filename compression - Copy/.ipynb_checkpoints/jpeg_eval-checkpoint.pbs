@@ -1,9 +1,0 @@
-#PBS -l select=1:ncpus=4:mem=256gb,walltime=48:00:00
-#PBS -N eval_dataset
-#PBS -j oe
-#PBS -m ae
-
-
-cd dissertation/compression/
-
-python psnr_eval_jpeg.py
